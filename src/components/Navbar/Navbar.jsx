@@ -30,10 +30,12 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="flex justify-between max-w-7xl mx-auto items-center">
+            <div className="flex justify-between max-w-7xl mx-auto items-center py-2 px-4 md:px-5 xl:px-0">
                 {/* Logo */}
                 <div>
-                    <img className="w-16" src={logo} alt="" />
+                    <Link to="/">
+                        <img className="w-16" src={logo} alt="" />
+                    </Link>
                 </div>
                 {/* menu */}
                 <nav className="flex gap-10">
@@ -42,20 +44,20 @@ const Navbar = () => {
                             (<NavLink key={menu?.route}
                             to={menu?.pathname}
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active text-red-600" : ""
+                                isPending ? "pending" : isActive ? "active text-blue-600" : ""
                             }
                             >
-                            {menu?.route}
+                            <li className="list-none hover:text-blue-600">{menu?.route}</li>
                             </NavLink>
                         ))
                     }
                 </nav>
                 {/* apartment btn */}
                 <div className="flex items-center gap-5">
-                    <i className=' text-lg bx bxs-shopping-bag'></i>
-                    <i className=' text-lg bx bx-search-alt-2' ></i>
+                    <i className=' hover:text-blue-600 text-lg bx bxs-shopping-bag'></i>
+                    <i className=' hover:text-blue-600 text-lg bx bx-search-alt-2' ></i>
                     <Link to="/">
-                        <button className="font-semibold rounded-md border border-[#FF3811] py-2 px-5 btn-outline text-[#FF3811] hover:border-[#FF3811] hover:bg-transparent hover:text-[#FF3811]">Apartment</button>
+                        <button className="font-semibold rounded-md border border-[#FF3811] hover:border-blue-600 py-2 px-5 btn-outline text-[#FF3811] hover:text-blue-600 hover:bg-transparent transition-all">Apartment</button>
                     </Link>
                 </div>
             </div>
