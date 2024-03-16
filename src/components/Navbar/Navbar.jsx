@@ -49,7 +49,6 @@ const Navbar = () => {
                             }
                             >
                             <li className="list-none font-bold">{menu?.route}</li>
-                            {/* <li className="list-none hover:text-blue-600 menu_item font-bold">{menu?.route}</li> */}
                             </NavLink>
                         ))
                     }
