@@ -1,0 +1,34 @@
+nav a {
+    position: relative;
+}
+
+nav a li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -5px;
+    left: 0px;
+    background: blue;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover li::after {
+    width: 50%;
+    height: 3px;
+}
+
+nav a:hover li {
+    color: blue;
+}
+
+nav a.active li::after {
+    width: 50%;
+    height: 3px;
+    bottom: -5px;
+    left: 0px;
+}
+
+nav a.active li {
+    color: blue;
+}

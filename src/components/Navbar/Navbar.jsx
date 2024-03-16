@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import './Navbar.css';
 import logo from "../../assets/logo.svg"
 
 const Navbar = () => {
@@ -38,16 +39,17 @@ const Navbar = () => {
                     </Link>
                 </div>
                 {/* menu */}
-                <nav className="flex gap-10">
+                <nav className="flex gap-10 navbar_style">
                     {
                         menulinks?.map(menu => 
                             (<NavLink key={menu?.route}
                             to={menu?.pathname}
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active text-blue-600" : ""
+                                isPending ? "pending" : isActive ? "active" : ""
                             }
                             >
-                            <li className="list-none hover:text-blue-600">{menu?.route}</li>
+                            <li className="list-none font-bold">{menu?.route}</li>
+                            {/* <li className="list-none hover:text-blue-600 menu_item font-bold">{menu?.route}</li> */}
                             </NavLink>
                         ))
                     }
