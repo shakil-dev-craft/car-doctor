@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from '../../assets/icons/footer_logo.png';
+import './Footer.css';
 
 const Footer = () => {
     return (
@@ -17,23 +18,23 @@ const Footer = () => {
                     <i className=' text-lg hover:text-[#FF3811] hover:transition-all bx bxl-linkedin' ></i>
                     </div>
                 </div>
-                <div className="space-y-6">
-                    <h2 className="text-lg font-semibold">About</h2>
+                <div className=" footer_about_title space-y-6">
+                    <h2 className="  custom_style_h2 text-lg font-semibold">About</h2>
                     <div className="footer_about">
                         <Link to="/"><li className=" hover:text-blue-600 transition-all font-light list-none text-sm md:text-base mb-3">Home</li></Link>
                         <Link to="/services"><li className=" hover:text-blue-600 transition-all font-light list-none text-sm md:text-base mb-3">Service</li></Link>
                         <Link to="/contact"><li className=" hover:text-blue-600 transition-all font-light list-none text-sm md:text-base">Contact</li></Link>
                     </div>
                 </div>
-                <div className="space-y-6">
-                    <h2 className="text-lg font-semibold">Company</h2>
+                <div className=" footer_about_title space-y-6">
+                    <h2 className="  custom_style_h2 text-lg font-semibold">Company</h2>
                     <div className="footer_about">
                         <Link to="/"><li className=" hover:text-blue-600 transition-all font-light list-none text-sm md:text-base mb-3">Why Car Doctor</li></Link>
                         <Link to="/about"><li className=" hover:text-blue-600 transition-all font-light list-none text-sm md:text-base mb-3">About</li></Link>
                     </div>
                 </div>
-                <div className="space-y-6">
-                    <h2 className="text-lg font-semibold">About</h2>
+                <div className=" footer_about_title space-y-6">
+                    <h2 className="  custom_style_h2 text-lg font-semibold">About</h2>
                     <div className="footer_about">
                         <Link to="/"><li className=" hover:text-blue-600 transition-all font-light list-none text-sm md:text-base mb-3">Suport Center</li></Link>
                         <Link to="/"><li className=" hover:text-blue-600 transition-all font-light list-none text-sm md:text-base mb-3">Feedback</li></Link>

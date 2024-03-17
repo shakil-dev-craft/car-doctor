@@ -58,7 +58,8 @@ const Navbar = () => {
                     <i className=' hover:text-blue-600 text-lg bx bxs-shopping-bag'></i>
                     <i className=' hover:text-blue-600 text-lg bx bx-search-alt-2' ></i>
                     <Link to="/">
-                        <button className="font-semibold rounded-md border border-[#FF3811] hover:border-blue-600 py-2 px-5 btn-outline text-[#FF3811] hover:text-blue-600 hover:bg-transparent transition-all">Apartment</button>
+                        <button className=" apartment_btn font-semibold rounded-md border py-2 px-5">Apartment</button>
+                        {/* <button className=" apartment_btn font-semibold rounded-md border hover:border-[#0000FF] py-2 px-5 btn-outline hover:text-[#FF3811] text-[#0000FF] hover:bg-transparent transition-all">Apartment</button> */}
                     </Link>
                 </div>
             </div>

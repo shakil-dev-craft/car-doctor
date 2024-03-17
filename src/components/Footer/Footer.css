@@ -1,0 +1,28 @@
+
+.footer_about_title h2.custom_style_h2 {
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.footer_about_title h2.custom_style_h2:hover {
+    color: blue;
+}
+
+.footer_about_title h2.custom_style_h2::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    color: blue;
+    background: blue;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer_about_title h2.custom_style_h2:hover::after {
+    width: 15%;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+}

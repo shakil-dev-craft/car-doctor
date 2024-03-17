@@ -1,3 +1,4 @@
+/* * nave menu style */
 nav a {
     position: relative;
 }
@@ -31,4 +32,14 @@ nav a.active li::after {
 
 nav a.active li {
     color: blue;
+}
+
+/* * btn style */
+.apartment_btn {
+    color: blue;
+    transition: 0.3s ease-in-out;
+}
+
+.apartment_btn:hover {
+    color: red;
 }
