@@ -86,7 +86,7 @@ const Navbar = () => {
                 </div>
                 {/* menu bar icons */}
                 <div id="mobile" onClick={handleClick}>
-                    <i className={clicked ? "bx bx-x" : "bx bx-menu"}></i>
+                    <i className={clicked ? "bx bx-x text-red-500" : "bx bx-menu"}></i>
                 </div>
             </div>
         </div>
