@@ -5,12 +5,12 @@ import './Footer.css';
 const Footer = () => {
     return (
         <div className="bg-[#151515]">
-            <div className='max-w-7xl mx-auto text-white grid grid-cols-1 md:grid-cols-5 gap-5 py-20 px-4 md:px-5 xl:px-0'>
-                <div className="md:col-span-2 space-y-5">
+            <div className='max-w-7xl mx-auto text-white grid sm:grid-cols-5 gap-5 py-20 px-4 md:px-5 xl:px-0'>
+                <div className="sm:col-span-2 space-y-5">
                     <Link to="/">
                         <img className="w-16" src={logo} alt="Logo" />
                     </Link>
-                    <p className="text-sm md:text-base md:max-w-[55%] font-light ">Edwin Diaz is a software and web technologies engineer, a life coach trainer who is also a serial .</p>
+                    <p className="text-sm md:text-base md:max-w-[55%] font-light ">Edwin Diaz is a software and web technologies engineer, a life coach trainer who is also a serial.</p>
                     <div className="flex items-center gap-5">
                     <i className=' text-lg hover:text-[#FF3811] hover:transition-all bx bxl-google' ></i>
                     <i className=' text-lg hover:text-[#FF3811] hover:transition-all bx bxl-twitter' ></i>
