@@ -77,8 +77,8 @@ const Navbar = () => {
                 </nav>
                 {/* apartment btn */}
                 <div id="mobile_apartment" className="flex items-center gap-5">
-                    <i className=' hover:text-blue-600 text-lg bx bxs-shopping-bag'></i>
-                    <i className=' hover:text-blue-600 text-lg bx bx-search-alt-2' ></i>
+                    <i className=' hidden lg:block hover:text-blue-600 text-lg bx bxs-shopping-bag'></i>
+                    <i className=' hidden lg:block hover:text-blue-600 text-lg bx bx-search-alt-2' ></i>
                     <Link to="/">
                         <button className=" apartment_btn font-semibold rounded-md border py-2 px-5">Apartment</button>
                         {/* <button className=" apartment_btn font-semibold rounded-md border hover:border-[#0000FF] py-2 px-5 btn-outline hover:text-[#FF3811] text-[#0000FF] hover:bg-transparent transition-all">Apartment</button> */}
