@@ -75,12 +75,12 @@ const Navbar = () => {
                         ))
                     }
                     <NavLink onClick={handleClick}
-                    to="/login"
+                    to="/signin"
                     className={({ isActive, isPending }) =>
                         isPending ? "pending" : isActive ? "active" : ""
                     }
                     >
-                    <li className="list-none font-bold">Login</li>
+                    <li className="list-none font-bold">Sign in</li>
                     </NavLink>
                 </nav>
                 {/* apartment btn */}
