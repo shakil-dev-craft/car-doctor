@@ -50,7 +50,7 @@ const Signup = () => {
                                 <i className=' custom_icon_css bg-[#F5F5F8] text-2xl w-10 h-10 flex justify-center items-center rounded-full bx bxl-github' ></i>
                             </Link>
                         </div>
-                        <p className='mt-6 text-black'>Already have an account? <Link><span className='text-[#FF3811] hover:text-blue-600 font-bold'>Sign in</span></Link></p>
+                        <p className='mt-6 text-black'>Already have an account? <Link to="/signin"><span className='text-[#FF3811] hover:text-blue-600 font-bold'>Sign in</span></Link></p>
                     </div>
                 </div>
             </div>
