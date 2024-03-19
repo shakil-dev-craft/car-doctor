@@ -7,11 +7,11 @@ const Signup = () => {
 
     return (
         <div className="hero min-h-screen flex justify-center items-center py-10 ">
-            <div className="hero-content flex-col sm:flex-row md:gap-14 lg:gap-24 px-0">
+            <div className="hero-content flex flex-col-reverse md:flex-row gap-20 md:gap-14 lg:gap-28 px-0">
                 <div className="text-center lg:text-left">
                     <img src={formImg} alt="" />
                 </div>
-                <div className="sign_up_form card shrink-0 w-full sm:max-w-1/2 md:max-w-sm shadow-xl bg-base-100 py-10 mt-10 sm:mt-0 rounded-lg">
+                <div className="sign_up_form card shrink-0 w-full sm:max-w-1/2 md:max-w-sm shadow-xl bg-base-100 py-10 rounded-lg">
                     <h2 className=' sign_up_style font-semibold text-2xl lg:text-3xl text-center w-[130px] mx-auto'>Sign up</h2>
                     <form className="card-body">
                         <div className="form-control">
