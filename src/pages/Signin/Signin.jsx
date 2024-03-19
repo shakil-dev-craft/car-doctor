@@ -18,13 +18,13 @@ const Signin = () => {
                         <label className="label">
                             <span className="label-text font-semibold text-black">Email</span>
                         </label>
-                        <input type="email" placeholder="Your email" className=" rounded-md outline-none focus:outline-none input font-light input-bordered" required />
+                        <input type="email" placeholder="Your email" className=" rounded-md outline-none focus:outline-none input font-normal input-bordered" required />
                         </div>
                         <div className="form-control">
                         <label className="label">
                             <span className="label-text font-semibold text-black">Password</span>
                         </label>
-                        <input type="password" placeholder="Your password" className=" rounded-md outline-none focus:outline-none font-light input input-bordered" required />
+                        <input type="password" placeholder="Your password" className=" rounded-md outline-none focus:outline-none font-normal input input-bordered" required />
                         <label className="">
                             <a href="#" className="text-xs text-black hover:text-[#FF3811] font-semibold">Forgot password?</a>
                         </label>

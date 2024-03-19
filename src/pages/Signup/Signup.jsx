@@ -2,8 +2,33 @@
 import { Link } from 'react-router-dom';
 import formImg from '../../assets/images/login/login.svg';
 import './Signup.css';
+import { useContext } from 'react';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const Signup = () => {
+
+    const {createUser} = useContext(AuthContext);
+
+    // sign up new user account
+    const handleSignUp = (e) => {
+        e.preventDefault();
+
+        const form = e.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const password = form.password.value;
+
+        console.log(name, email, password);
+
+        // sign up
+        createUser(email, password)
+        .then((currentUser) => {
+            console.log(currentUser?.user);
+        })
+        .catch((error) => {
+            console.log(error?.message);
+        })
+    };
 
     return (
         <div className="hero min-h-screen flex justify-center items-center py-10 ">
@@ -13,24 +38,24 @@ const Signup = () => {
                 </div>
                 <div className="sign_up_form card shrink-0 w-full sm:max-w-1/2 md:max-w-sm shadow-xl bg-base-100 py-10 rounded-lg">
                     <h2 className=' sign_up_style font-semibold text-2xl lg:text-3xl text-center w-[130px] mx-auto'>Sign up</h2>
-                    <form className="card-body">
+                    <form onSubmit={handleSignUp} className="card-body">
                         <div className="form-control">
                         <label className="label">
                             <span className="label-text font-semibold text-black">Name</span>
                         </label>
-                        <input type="name" placeholder="Your name" className=" rounded-md outline-none focus:outline-none input font-light input-bordered" required />
+                        <input type="name" name='name' placeholder="Your name" className=" rounded-md outline-none focus:outline-none input font-normal input-bordered" required />
                         </div>
                         <div className="form-control">
                         <label className="label">
                             <span className="label-text font-semibold text-black">Email</span>
                         </label>
-                        <input type="email" placeholder="Your email" className=" rounded-md outline-none focus:outline-none input font-light input-bordered" required />
+                        <input type="email" name='email' placeholder="Your email" className=" rounded-md outline-none focus:outline-none input font-normal input-bordered" required />
                         </div>
                         <div className="form-control">
                         <label className="label">
                             <span className="label-text font-semibold text-black">Password</span>
                         </label>
-                        <input type="password" placeholder="Your password" className=" rounded-md outline-none focus:outline-none font-light input input-bordered" required />
+                        <input type="password" name='password' placeholder="Your password" className=" rounded-md outline-none focus:outline-none font-normal input input-bordered" required />
                         </div>
                         <div className="form-control mt-6">
                         <button className="btn sign_up_btn rounded-md">Sign up</button>
