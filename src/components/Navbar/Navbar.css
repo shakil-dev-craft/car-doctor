@@ -40,12 +40,12 @@ nav a.active li {
 
 /* * btn style */
 .apartment_btn {
-    color: blue;
+    color: red;
     transition: 0.3s ease-in-out;
 }
 
 .apartment_btn:hover {
-    color: red;
+    color: blue;
 }
 
 #mobile {
