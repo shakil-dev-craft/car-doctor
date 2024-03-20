@@ -3,11 +3,11 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
-nav a {
+nav a, .sign_out {
     position: relative;
 }
 
-nav a li::after {
+nav a li::after, .sign_out::after {
     content: '';
     position: absolute;
     width: 0;
@@ -18,7 +18,7 @@ nav a li::after {
     transition: 0.3s ease-in-out;
 }
 
-nav a:hover li::after {
+nav a:hover li::after, .sign_out:hover::after {
     width: 50%;
     height: 3px;
 }
@@ -44,7 +44,7 @@ nav a.active li {
     transition: 0.3s ease-in-out;
 }
 
-.apartment_btn:hover {
+.apartment_btn:hover, .sign_out:hover {
     color: blue;
 }
 

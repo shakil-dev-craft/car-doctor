@@ -1,9 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
 import './Navbar.css';
 import logo from "../../assets/logo.svg"
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Navbar = () => {
+
+    const {user} = useContext(AuthContext);
 
     const [clicked, setClicked] = useState(false);
 
@@ -29,8 +32,6 @@ const Navbar = () => {
             pathname: "/contact"
         },
     ]
-
-    // console.log(menulinks);
 
     // menu icons change btn
     const handleClick = () => {
@@ -74,14 +75,18 @@ const Navbar = () => {
                             </NavLink>
                         ))
                     }
-                    <NavLink onClick={handleClick}
-                    to="/signin"
-                    className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "active" : ""
+                    {
+                        !user?.email ? <NavLink onClick={handleClick}
+                        to="/signin"
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "active" : ""
+                        }
+                        >
+                        <li className="list-none font-bold">Sign in</li>
+                        </NavLink>
+                        :
+                        <li className=" sign_out list-none font-bold">Sign out</li>
                     }
-                    >
-                    <li className="list-none font-bold">Sign in</li>
-                    </NavLink>
                 </nav>
                 {/* apartment btn */}
                 <div id="mobile_apartment" className="flex items-center gap-5">
