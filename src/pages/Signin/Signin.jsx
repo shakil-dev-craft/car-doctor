@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import formImg from '../../assets/images/login/login.svg';
 import './Signin.css';
 import { useContext } from 'react';
@@ -8,6 +8,9 @@ import { AuthContext } from '../../providers/AuthProvider';
 const Signin = () => {
 
     const {signIn} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+    console.log(location);
 
     const handleSignIn = (e) => {
         e.preventDefault();
@@ -20,6 +23,9 @@ const Signin = () => {
         signIn(email, password)
         .then(currentUser => {
             console.log(currentUser?.user);
+
+            // if get location then redirect from to location pathname
+            navigate(location?.state ? location?.state : '/');
         })
         .catch(error => {
             console.log(error);
