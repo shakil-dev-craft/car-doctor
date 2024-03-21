@@ -2,8 +2,29 @@
 import { Link } from 'react-router-dom';
 import formImg from '../../assets/images/login/login.svg';
 import './Signin.css';
+import { useContext } from 'react';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const Signin = () => {
+
+    const {signIn} = useContext(AuthContext);
+
+    const handleSignIn = (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        // console.log(email, password);
+
+        // sign in proccess
+        signIn(email, password)
+        .then(currentUser => {
+            console.log(currentUser?.user);
+        })
+        .catch(error => {
+            console.log(error);
+        })
+    };
 
     return (
         <div className="hero min-h-screen flex justify-center items-center py-10 ">
@@ -13,18 +34,18 @@ const Signin = () => {
                 </div>
                 <div className="sign_up_form card shrink-0 w-full sm:max-w-1/2 md:max-w-sm shadow-xl bg-base-100 py-10 rounded-lg">
                     <h2 className=' sign_up_style font-semibold text-2xl lg:text-3xl text-center w-[130px] mx-auto'>Sign in</h2>
-                    <form className="card-body">
+                    <form onSubmit={handleSignIn} className="card-body">
                         <div className="form-control">
                         <label className="label">
                             <span className="label-text font-semibold text-black">Email</span>
                         </label>
-                        <input type="email" placeholder="Your email" className=" rounded-md outline-none focus:outline-none input font-normal input-bordered" required />
+                        <input type="email" name='email' placeholder="Your email" className=" rounded-md outline-none focus:outline-none input font-normal input-bordered" required />
                         </div>
                         <div className="form-control">
                         <label className="label">
                             <span className="label-text font-semibold text-black">Password</span>
                         </label>
-                        <input type="password" placeholder="Your password" className=" rounded-md outline-none focus:outline-none font-normal input input-bordered" required />
+                        <input type="password" name='password' placeholder="Your password" className=" rounded-md outline-none focus:outline-none font-normal input input-bordered" required />
                         <label className="">
                             <a href="#" className="text-xs text-black hover:text-[#FF3811] font-semibold">Forgot password?</a>
                         </label>

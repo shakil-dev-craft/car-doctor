@@ -6,7 +6,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 
 const Navbar = () => {
 
-    const {user} = useContext(AuthContext);
+    const {user, logOut} = useContext(AuthContext);
 
     const [clicked, setClicked] = useState(false);
 
@@ -36,6 +36,20 @@ const Navbar = () => {
     // menu icons change btn
     const handleClick = () => {
         setClicked(!clicked);
+    };
+
+    // sign out
+    const handleSignout = () => {
+        console.log('hit sign out');
+
+        // sign out
+        logOut()
+        .then( () => {
+            console.log('Sign out successfully!');
+        })
+        .catch((error) => {
+            console.log(error?.message);
+        })
     };
 
     // Set clicked state to false when scrolling
@@ -85,7 +99,7 @@ const Navbar = () => {
                         <li className="list-none font-bold">Sign in</li>
                         </NavLink>
                         :
-                        <li className=" sign_out list-none font-bold">Sign out</li>
+                        <li onClick={handleSignout} className=" sign_out list-none font-bold">Sign out</li>
                     }
                 </nav>
                 {/* apartment btn */}
