@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className={`min-h-[calc(100vh-423px)] max-w-7xl mx-auto py-5 ${isSmallDevice && isSignupOrSignin ? 'px-0' : 'px-4 md:px-5 xl:px-0'}`}>
+      <div className={`overflow-hidden min-h-[calc(100vh-423px)] max-w-7xl mx-auto py-5 ${isSmallDevice && isSignupOrSignin ? 'px-0' : 'px-4 md:px-5 xl:px-0'}`}>
         <Outlet />
       </div>
       <Footer />
