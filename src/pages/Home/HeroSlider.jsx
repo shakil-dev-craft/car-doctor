@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './HeroSlider.css';
 
 // slide img
 import img1 from '../../assets/images/banner/1.jpg';
