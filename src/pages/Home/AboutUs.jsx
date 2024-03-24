@@ -18,8 +18,8 @@ const AboutUs = () => {
                 <TitleUtility title="We are qualified & of experience in this field" subtitle="About Us" />
 
                 <div className='space-y-5'>
-                    <p className=' text-sm capitalize  text-[#737373]'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don not look even slightly believable.</p>
-                    <p className=' text-sm capitalize  text-[#737373]'>the majority have suffered alteration in some form, by injected humour, or randomised words which don not look even slightly believable.</p>
+                    <p className=' md:leading-normal lg:leading-relaxed text-[13px] lg:text-sm capitalize  text-[#737373]'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don not look even slightly believable.</p>
+                    <p className=' md:leading-normal lg:leading-relaxed text-[13px] lg:text-sm capitalize  text-[#737373]'>the majority have suffered alteration in some form, by injected humour, or randomised words which don not look even slightly believable.</p>
                 </div>
                 <div>
                     <Link to="/">
