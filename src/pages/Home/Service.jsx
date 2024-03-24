@@ -7,6 +7,7 @@ import service3 from '../../assets/images/services/3.jpg';
 import service4 from '../../assets/images/services/4.jpg';
 import service5 from '../../assets/images/services/5.jpg';
 import service6 from '../../assets/images/services/6.jpg';
+import { Link } from "react-router-dom";
 
 const Service = () => {
     return (
@@ -89,6 +90,12 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            {/* more btn */}
+            <div className="flex justify-center mt-10">
+                <Link to="/">
+                    <button className="text-sm md:text-base font-semibold transition-all bg-transparent text-[#FF3811] border hover:border-black border-[#FF3811] py-2 lg:py-3 hover:bg-black hover:text-white px-4 md:px-5 lg:px-6 rounded-md">More Services</button>
+                </Link>
             </div>
         </div>
     );
