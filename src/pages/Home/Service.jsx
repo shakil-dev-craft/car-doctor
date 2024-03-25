@@ -20,7 +20,7 @@ const Service = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-5 lg:gap-6 mt-10">
                 <div className="border p-5 border-[#E8E8E8] rounded-lg space-y-5">
                     <div>
-                        <img className="rounded-lg" src={service1} alt="" />
+                        <img className="rounded-lg md:h-[150px] lg:h-[210px] w-full object-fit" src={service1} alt="" />
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-[#444444] text-xl md:text-base lg:text-2xl font-bold">Electrical System</h2>
@@ -32,7 +32,7 @@ const Service = () => {
                 </div>
                 <div className="border p-5 border-[#E8E8E8] rounded-lg space-y-5">
                     <div>
-                        <img className="rounded-lg" src={service2} alt="" />
+                        <img className="rounded-lg md:h-[150px] lg:h-[210px] w-full object-fit" src={service2} alt="" />
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-[#444444] text-xl md:text-base lg:text-2xl font-bold">Engine Diagnostics</h2>
@@ -44,7 +44,7 @@ const Service = () => {
                 </div>
                 <div className="border p-5 border-[#E8E8E8] rounded-lg space-y-5">
                     <div>
-                        <img className="rounded-lg" src={service3} alt="" />
+                        <img className="rounded-lg md:h-[150px] lg:h-[210px] w-full object-fit" src={service3} alt="" />
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-[#444444] text-xl md:text-base lg:text-2xl font-bold">Auto Car Repair</h2>
@@ -56,7 +56,7 @@ const Service = () => {
                 </div>
                 <div className="border p-5 border-[#E8E8E8] rounded-lg space-y-5">
                     <div>
-                        <img className="rounded-lg" src={service4} alt="" />
+                        <img className="rounded-lg md:h-[150px] lg:h-[210px] w-full object-fit" src={service4} alt="" />
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-[#444444] text-xl md:text-base lg:text-2xl font-bold">Electrical System</h2>
@@ -68,7 +68,7 @@ const Service = () => {
                 </div>
                 <div className="border p-5 border-[#E8E8E8] rounded-lg space-y-5">
                     <div>
-                        <img className="rounded-lg" src={service5} alt="" />
+                        <img className="rounded-lg md:h-[150px] lg:h-[210px] w-full object-fit" src={service5} alt="" />
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-[#444444] text-xl md:text-base lg:text-2xl font-bold">Electrical System</h2>
@@ -80,7 +80,7 @@ const Service = () => {
                 </div>
                 <div className="border p-5 border-[#E8E8E8] rounded-lg space-y-5">
                     <div>
-                        <img className="rounded-lg" src={service6} alt="" />
+                        <img className="rounded-lg md:h-[150px] lg:h-[210px] w-full object-fit" src={service6} alt="" />
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-[#444444] text-xl md:text-base lg:text-2xl font-bold">Electrical System</h2>
