@@ -3,6 +3,7 @@ import HeroSlider from "./HeroSlider";
 import PopularProduct from "./PopularProduct";
 import QaSection from "./QaSection";
 import Service from "./Service";
+import Team from "./Team";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <Service />
             <QaSection />
             <PopularProduct />
+            <Team />
         </div>
     );
 };
