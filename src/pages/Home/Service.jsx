@@ -17,7 +17,7 @@ const Service = () => {
                 <TitleUtility title="Our Service Area" subtitle="Service" description="the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable." />
             </div>
             {/* product case */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-5 lg:gap-6 mt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-5 lg:gap-6 mt-10">
                 <div className="border p-5 border-[#E8E8E8] rounded-lg space-y-5">
                     <div>
                         <img className="rounded-lg md:h-[150px] lg:h-[210px] w-full object-fit" src={service1} alt="" />
