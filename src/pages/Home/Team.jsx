@@ -51,7 +51,7 @@ const Team = () => {
     };
 
     return (
-        <div className=" my-10 md:my-20">
+        <div className=" my-16 md:my-20">
             <div className="text-center">
                 <TitleUtility title="Meet Our Team" subtitle="Team" description="the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable." />
             </div>

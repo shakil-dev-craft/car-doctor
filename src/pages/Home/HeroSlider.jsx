@@ -22,7 +22,21 @@ const HeroSlider = () => {
       slidesToShow: 1,
       autoplay: true,
       slidesToScroll: 1,
-      variableWidth: false
+      variableWidth: false,
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            dots: false
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            dots: false
+          }
+        }
+      ]
     };
 
     return (

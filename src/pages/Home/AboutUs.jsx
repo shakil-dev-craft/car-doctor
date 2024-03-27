@@ -6,7 +6,7 @@ import TitleUtility from '../../utility/TitleUtility';
 
 const AboutUs = () => {
     return (
-        <div className="flex flex-col-reverse md:flex-row md:flex-none md:gap-12 lg:gap-24 mt-[100px] mb-24">
+        <div className="flex flex-col-reverse md:flex-row md:flex-none md:gap-12 lg:gap-24 md:mt-[100px] mb-24">
             <div className="relative md:w-[45%] lg:w-[50%]">
                 <img className=' max-w-[90%] md:max-w-[100%] lg:max-w-[90%] md:min-h-[90%] lg:min-h-[95%] rounded-md object-fill' src={person} alt="" />
                 <img className=' absolute md:-right-6 lg:right-0 -bottom-10 md:-bottom-4 lg:-bottom-10 border-8 border-white rounded-md shadow-lg right-0 max-w-[50%]' src={parts} alt="" />
