@@ -59,10 +59,10 @@ const Team = () => {
             {/* team slide */}
             <div className="slider-container mt-10">
                 <Slider {...settings}>
-                        <div className=" px-2 lg:px-3">
+                        <div className="sm:px-3">
                             <div className="border p-5 border-[#E8E8E8] rounded-lg space-y-5">
                                 <div className="bg-[#F3F3F3] rounded-lg">
-                                    <img className="rounded-lg h-full w-full object-cover mx-auto" src={team1} alt="" />
+                                    <img className="rounded-lg sm:h-[220px] h-full w-full object-cover mx-auto" src={team1} alt="" />
                                 </div>
                                 <div className="flex flex-col justify-between items-center space-y-1">
                                     <h2 className="text-[#444444] text-xl md:text-base lg:text-2xl font-bold">Car Engine Plug</h2>
@@ -76,10 +76,10 @@ const Team = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className=" px-2 lg:px-3">
+                        <div className="sm:px-3">
                             <div className="border p-5 border-[#E8E8E8] rounded-lg space-y-5">
                                 <div className="bg-[#F3F3F3] rounded-lg">
-                                    <img className="rounded-lg h-full w-full object-cover mx-auto" src={team2} alt="" />
+                                    <img className="rounded-lg sm:h-[220px] h-full w-full object-cover mx-auto" src={team2} alt="" />
                                 </div>
                                 <div className="flex flex-col justify-between items-center space-y-1">
                                     <h2 className="text-[#444444] text-xl md:text-base lg:text-2xl font-bold">Car Engine Plug</h2>
@@ -93,10 +93,10 @@ const Team = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className=" px-2 lg:px-3">
+                        <div className="sm:px-3">
                             <div className="border p-5 border-[#E8E8E8] rounded-lg space-y-5">
                                 <div className="bg-[#F3F3F3] rounded-lg">
-                                    <img className="rounded-lg h-full w-full object-cover mx-auto" src={team3} alt="" />
+                                    <img className="rounded-lg sm:h-[220px] h-full w-full object-cover mx-auto" src={team3} alt="" />
                                 </div>
                                 <div className="flex flex-col justify-between items-center space-y-1">
                                     <h2 className="text-[#444444] text-xl md:text-base lg:text-2xl font-bold">Car Engine Plug</h2>

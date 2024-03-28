@@ -41,7 +41,7 @@ const HeroSlider = () => {
 
     return (
         <Slider className='my-10' {...settings}>
-            <div className='relative rounded-lg overflow-hidden px-2'>
+            <div className='relative rounded-lg overflow-hidden sm:px-2'>
                 <img className='rounded-lg max-h-[600px] w-full object-fill object-top' src={img1} alt="" />
                 <div className='rounded-lg pb-5 sm:pb-16 md:pb-20 xl:pb-0 px-5 md:px-14 lg:px-16 xl:px-24 flex flex-col justify-end xl:justify-center text-white bg-gradient-to-r from-[#151515] to-transparent absolute top-0 left-0 w-full h-full'>
                   <div className=' rounded-lg space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 w-full sm:w-[58%] md:w-[60%] lg:w-[43%] xl:w-[40%]'>
@@ -58,7 +58,7 @@ const HeroSlider = () => {
                   </div>
                 </div>
             </div>
-            <div className='relative rounded-lg overflow-hidden px-2 '>
+            <div className='relative rounded-lg overflow-hidden sm:px-2 '>
                 <img className='rounded-lg max-h-[600px] w-full object-fill object-top ' src={img2} alt="" />
                 <div className='rounded-lg pb-5 sm:pb-16 md:pb-20 xl:pb-0 px-5 md:px-14 lg:px-16 xl:px-24 flex flex-col justify-end xl:justify-center text-white bg-gradient-to-r from-[#151515] to-transparent absolute top-0 left-0 w-full h-full '>
                   <div className='  rounded-lg space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 w-full sm:w-[58%] md:w-[60%] lg:w-[43%] xl:w-[40%]'>
@@ -75,7 +75,7 @@ const HeroSlider = () => {
                   </div>
                 </div>
             </div>
-            <div className='relative rounded-lg overflow-hidden px-2 '>
+            <div className='relative rounded-lg overflow-hidden sm:px-2 '>
                 <img className='rounded-lg max-h-[600px] w-full object-fill object-top ' src={img3} alt="" />
                 <div className='rounded-lg pb-5 sm:pb-16 md:pb-20 xl:pb-0 px-5 md:px-14 lg:px-16 xl:px-24 flex flex-col justify-end xl:justify-center text-white bg-gradient-to-r from-[#151515] to-transparent absolute top-0 left-0 w-full h-full '>
                   <div className=' rounded-lg space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 w-full sm:w-[58%] md:w-[60%] lg:w-[43%] xl:w-[40%]'>
@@ -92,7 +92,7 @@ const HeroSlider = () => {
                   </div>
                 </div>
             </div>
-            <div className='relative rounded-lg overflow-hidden px-2 '>
+            <div className='relative rounded-lg overflow-hidden sm:px-2 '>
                 <img className='rounded-lg max-h-[600px] w-full object-fill object-top ' src={img4} alt="" />
                 <div className='rounded-lg pb-5 sm:pb-16 md:pb-20 xl:pb-0 px-5 md:px-14 lg:px-16 xl:px-24 flex flex-col justify-end xl:justify-center text-white bg-gradient-to-r from-[#151515] to-transparent absolute top-0 left-0 w-full h-full '>
                   <div className=' rounded-lg space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 w-full sm:w-[58%] md:w-[60%] lg:w-[43%] xl:w-[40%]'>
@@ -109,7 +109,7 @@ const HeroSlider = () => {
                   </div>
                 </div>
             </div>
-            <div className='relative rounded-lg overflow-hidden px-2 '>
+            <div className='relative rounded-lg overflow-hidden sm:px-2 '>
                 <img className='rounded-lg max-h-[600px] w-full object-fill object-top ' src={img5} alt="" />
                 <div className='rounded-lg pb-5 sm:pb-16 md:pb-20 xl:pb-0 px-5 md:px-14 lg:px-16 xl:px-24 flex flex-col justify-end xl:justify-center text-white bg-gradient-to-r from-[#151515] to-transparent absolute top-0 left-0 w-full h-full '>
                   <div className=' rounded-lg space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 w-full sm:w-[58%] md:w-[60%] lg:w-[43%] xl:w-[40%]'>
@@ -126,7 +126,7 @@ const HeroSlider = () => {
                   </div>
                 </div>
             </div>
-            <div className='relative rounded-lg overflow-hidden px-2 '>
+            <div className='relative rounded-lg overflow-hidden sm:px-2 '>
                 <img className='rounded-lg max-h-[600px] w-full object-fill object-top ' src={img6} alt="" />
                 <div className='rounded-lg pb-5 sm:pb-16 md:pb-20 xl:pb-0 px-5 md:px-14 lg:px-16 xl:px-24 flex flex-col justify-end xl:justify-center text-white bg-gradient-to-r from-[#151515] to-transparent absolute top-0 left-0 w-full h-full '>
                   <div className=' rounded-lg space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 w-full sm:w-[58%] md:w-[60%] lg:w-[43%] xl:w-[40%]'>
