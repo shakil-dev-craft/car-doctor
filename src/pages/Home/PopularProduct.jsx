@@ -24,7 +24,7 @@ const PopularProduct = () => {
                 <TitleUtility subtitle="Popular Products" title="Browse Our Products" description="the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable." />
             </div>
             {/* popular products */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-5 lg:gap-6 mt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-6 mt-10">
                 <div className="border p-5 border-[#E8E8E8] rounded-lg space-y-5">
                     <div className="bg-[#F3F3F3] rounded-lg">
                         <img className="rounded-lg md:h-[200px] lg:h-[210px] w-40 md:w-32 py-10 md:py-5 lg:py-10 mx-auto" src={product1} alt="" />

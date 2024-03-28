@@ -1,4 +1,5 @@
 import AboutUs from "./AboutUs";
+import CoreFeatures from "./CoreFeatures";
 import HeroSlider from "./HeroSlider";
 import PopularProduct from "./PopularProduct";
 import QaSection from "./QaSection";
@@ -15,6 +16,7 @@ const Home = () => {
             <QaSection />
             <PopularProduct />
             <Team />
+            <CoreFeatures />
         </div>
     );
 };
