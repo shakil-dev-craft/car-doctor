@@ -5,6 +5,7 @@ import PopularProduct from "./PopularProduct";
 import QaSection from "./QaSection";
 import Service from "./Service";
 import Team from "./Team";
+import Testimonial from "./Testimonial";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <PopularProduct />
             <Team />
             <CoreFeatures />
+            <Testimonial />
         </div>
     );
 };
