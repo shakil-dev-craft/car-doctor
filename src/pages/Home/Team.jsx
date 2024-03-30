@@ -13,12 +13,13 @@ import team3 from '../../assets/images/team/3.jpg';
 const Team = () => {
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3,
         variableWidth: false,
+        autoplay: true,
         responsive: [
             {
               breakpoint: 1024,
@@ -26,7 +27,7 @@ const Team = () => {
                 slidesToShow: 2,
                 slidesToScroll: 2,
                 infinite: true,
-                dots: true
+                dots: false
               }
             },
             {
