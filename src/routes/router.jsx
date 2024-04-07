@@ -8,11 +8,13 @@ import Contact from "../pages/Contact/Contact";
 import Signup from "../pages/Signup/Signup";
 import Signin from "../pages/Signin/Signin";
 import PrivateRoute from "./PrivateRoute";
+import Error from "../pages/Error/Error";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
+        errorElement: <Error />,
         children: [
             {
                 path: '/',
