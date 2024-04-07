@@ -9,6 +9,7 @@ import Signup from "../pages/Signup/Signup";
 import Signin from "../pages/Signin/Signin";
 import PrivateRoute from "./PrivateRoute";
 import Error from "../pages/Error/Error";
+import AddService from "../pages/AddService/AddService";
 
 const router = createBrowserRouter([
     {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <Signup />
+            },
+            {
+                path: '/add_service',
+                element: <AddService />
             },
         ]
     }
