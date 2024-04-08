@@ -1,0 +1,89 @@
+/* * nave menu style */
+.nav_area {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+nav a, .sign_out {
+    position: relative;
+}
+
+nav a li::after, .sign_out::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -5px;
+    left: 0px;
+    background: blue;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover li::after, .sign_out:hover::after {
+    width: 50%;
+    height: 3px;
+}
+
+nav a:hover li {
+    color: blue;
+}
+
+nav a.active li::after {
+    width: 50%;
+    height: 3px;
+    bottom: -5px;
+    left: 0px;
+}
+
+nav a.active li {
+    color: blue;
+}
+
+/* * btn style */
+.apartment_btn {
+    color: red;
+    transition: 0.3s ease-in-out;
+}
+
+.apartment_btn:hover, .sign_out:hover {
+    color: blue;
+}
+
+#mobile {
+    display: none;
+}
+
+#mobile i {
+    font-size: 40px;
+}
+
+@media screen and (max-width: 769px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 60px;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        background: #2a3239;
+        color: #fff;
+        padding-top: 30px;
+        padding-left: 30px;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.06);
+        z-index: 10;
+        transition: 0.3s ease-in-out;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #navbar.active {
+        right: 0;
+    }
+
+    #mobile_apartment {
+        display: none;
+    }
+}
