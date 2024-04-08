@@ -94,6 +94,10 @@ const NavbarSecond = () => {
                         <li onClick={handleSignout} className=" sign_out list-none font-bold">Sign out</li>
                     }
                 </nav>
+                {/* menu bar icons */}
+                <div id="mobile" onClick={handleClick}>
+                    <i className={clicked ? "bx bx-x text-red-500" : "bx bx-menu"}></i>
+                </div>
             </div>
         </div>
     );
