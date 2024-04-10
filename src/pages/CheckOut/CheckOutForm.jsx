@@ -1,5 +1,5 @@
 
-const ServiceForm = () => {
+const CheckOutForm = () => {
     return (
         <div className="mt-24 mb-20 bg-[#F3F3F3] rounded-lg flex justify-center items-center lg:py-14">
             {/* service form */}
@@ -25,12 +25,8 @@ const ServiceForm = () => {
                         </div>
                     </div>
 
-                    <div className="form-control">
-                    <textarea className="rounded-md outline-none focus:outline-none p-4" name="product_description" id="" cols="10" rows="8" placeholder="Product Description"></textarea>
-                    </div>
-
                     <div className="form-control mt-6">
-                    <button className="btn sign_up_btn rounded-md">Sign up</button>
+                    <button className="btn sign_up_btn rounded-md">Order Confirm</button>
                     </div>
                 </form>
             </div>
@@ -38,4 +34,4 @@ const ServiceForm = () => {
     );
 };
 
-export default ServiceForm;
+export default CheckOutForm;

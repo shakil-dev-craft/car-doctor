@@ -10,6 +10,7 @@ import Signin from "../pages/Signin/Signin";
 import PrivateRoute from "./PrivateRoute";
 import Error from "../pages/Error/Error";
 import AddService from "../pages/AddService/AddService";
+import CheckOut from "../pages/CheckOut/CheckOut";
 
 const router = createBrowserRouter([
     {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
             {
                 path: '/add_service',
                 element: <AddService />
+            },
+            {
+                path: '/check_out',
+                element: <CheckOut />
             },
         ]
     }
